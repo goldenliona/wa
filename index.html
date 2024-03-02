@@ -6,25 +6,18 @@
 </head>
 <body>
    <script>
-      function redirectToRandomWhatsApp() {
-         // List of WhatsApp numbers
-         var whatsappLinks = [
-            "https://wa.me/+254772546959",
-            "https://wa.me/+254771728462",
-            // Add more links as needed
-         ];
+      // List of WhatsApp numbers
+      var whatsappLinks = [
+         "https://wa.me/+254772546959",
+         "https://wa.me/+254771728462",
+         // Add more links as needed
+      ];
 
-         // Get a random index
-         var randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+      // Get a random index
+      var randomIndex = Math.floor(Math.random() * whatsappLinks.length);
 
-         // Redirect to the random WhatsApp link
-         window.open(whatsappLinks[randomIndex], "_blank");
-      }
-
-      // Call the function when the page loads
-      window.onload = function() {
-         redirectToRandomWhatsApp();
-      };
+      // Redirect to the random WhatsApp link
+      window.location.href = whatsappLinks[randomIndex];
    </script>
 </body>
 </html>
