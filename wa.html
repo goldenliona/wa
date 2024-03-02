@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <script>
+      function redirectToRandomWhatsApp() {
+         // List of WhatsApp numbers
+         var whatsappLinks = [
+            "https://wa.me/+254772546959",
+            "https://wa.me/+254771728462",
+            // Add more links as needed
+         ];
+
+         // Get a random index
+         var randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+
+         // Redirect to the random WhatsApp link
+         window.open(whatsappLinks[randomIndex], "_blank");
+      }
+
+      // Call the function when the page loads
+      window.onload = function() {
+         redirectToRandomWhatsApp();
+      };
+   </script>
+</body>
+</html>
